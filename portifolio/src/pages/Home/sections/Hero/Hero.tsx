@@ -4,7 +4,6 @@ import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/StyledButton/AnimatedBackground/AnimatedBackground";
-import { Padding } from "@mui/icons-material";
 
 
 const Hero = () => {
@@ -54,7 +53,7 @@ const Hero = () => {
                             </Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={5} display="flex" justifyContent="center">
-                                    <StyledButton>
+                                    <StyledButton onClick={() => console.log("download")}>
                                         <DownloadIcon/>
                                         <Typography>
                                             Download CV 
@@ -62,7 +61,7 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={5} display="flex" justifyContent="center">
-                                    <StyledButton>
+                                    <StyledButton onClick={() => console.log("contact")}>
                                         <EmailIcon/>
                                         <Typography>
                                             Contact me 
